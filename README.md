@@ -1,19 +1,37 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
+=======
+# ⚡ FlashGrid Frontend
+>>>>>>> b276369e35ca691f39da96aec5ef6798b9a6a17e
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A real-time React frontend for a high-concurrency flash sale system. Users buy limited-stock items while stock updates live, and a built-in stress test checks that the backend never oversells.
 
-Currently, two official plugins are available:
+Backend repository: [FlashGrid-Backend](https://github.com/moashif912-maker/FlashGrid-Backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+**Shoppers**
+- Sales list with status (Upcoming, Live, Ended), countdown timers and a stock progress bar
+- Stock refreshes every 2 seconds
+- Buy button states: upcoming, live, sold out, ended, already purchased
+- Clear messages for every purchase response (201, 404, 409, 410, 425, 429)
+- Cooldown timer on the button when rate limited (429)
+- Order confirmation modal and My Orders page
+- Sign in with a numeric User ID, saved in localStorage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Admin**
+- Create sale form with validation
+- Live inventory table
+- Re-init action to reload a sale into Redis
 
-## Expanding the Oxlint configuration
+**Stress test**
+- Up to 200 concurrent users fired in parallel from the browser
+- Live counts for 201, 409, 410 and 429 with a chart
+- Automatic PASS / FAIL check: successful orders must not exceed the starting stock
+- One-click test sale that goes live in 5 seconds
 
+<<<<<<< HEAD
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
 =======
 # FlashGrid Frontend
@@ -45,13 +63,20 @@ Backend repository: [FlashGrid-Backend](https://github.com/moashif912-maker/Flas
 - One-click test sale that goes live in 5 seconds
 
 ## Tech stack
+=======
+## 🧰 Tech stack
+>>>>>>> b276369e35ca691f39da96aec5ef6798b9a6a17e
 
 | Layer | Technology |
 |---|---|
 | Frontend | React 18, Vite, Tailwind CSS, React Router, Axios, Recharts |
 | Backend | Spring Boot, Redis (Lua scripts), Redisson, PostgreSQL |
 
+<<<<<<< HEAD
 ## Getting started
+=======
+## 🚀 Getting started
+>>>>>>> b276369e35ca691f39da96aec5ef6798b9a6a17e
 
 Requires Node.js 18+ and the FlashGrid backend running on `http://localhost:8080`.
 
@@ -75,7 +100,11 @@ npm run dev
 
 Open http://localhost:5173. The backend must allow this origin through CORS.
 
+<<<<<<< HEAD
 ## API used
+=======
+## 🔌 API used
+>>>>>>> b276369e35ca691f39da96aec5ef6798b9a6a17e
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -110,4 +139,7 @@ src/
 ## Author
 
 Mo Ashif, B.Tech CSE
+<<<<<<< HEAD
 >>>>>>> 84a1ea158e4fbb565c85cfb688a8515ccce4dbe1
+=======
+>>>>>>> b276369e35ca691f39da96aec5ef6798b9a6a17e
